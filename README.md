@@ -149,31 +149,37 @@ This project contains **two separate implementations**, each serving a different
 - **Local development + evaluation**  
 - **HuggingFace Spaces deployment**
 
+## 📂 Repository Structure
+
+This project contains **two separate implementations**, each serving a different purpose:
+
+- **Local development + evaluation**
+- **HuggingFace Spaces deployment**
+
+```text
 ASL-Description2Sign/
+├── Local_Pipeline/                # Local RAG system
+│   ├── rag_core_2.py
+│   ├── build_database.py
+│   ├── main.py
+│   ├── test_runs.py
+│   ├── test_runs_top3.py
+│   └── (utilities)
 │
-├── Local_Pipeline/ # Local RAG system: evaluation + experimentation
-│ ├── rag_core_2.py
-│ ├── build_database.py
-│ ├── main.py
-│ ├── test_runs.py
-│ ├── test_runs_top3.py
-│ └── (utilities)
-│
-├── HF_Spaces_Deployment # HuggingFace app (CPU)
-│ ├── app.py
-│ ├── build_database.py
-│ ├── requirements.txt
-│ ├── README.md
+├── HF_Spaces_Deployment/          # HuggingFace CPU-only deployment
+│   ├── app.py
+│   ├── build_database.py
+│   ├── requirements.txt
+│   └── models/
+│       └── README.md
 │
 ├── data/
-│ └── ASL_Descriptions.json
+│   └── ASL_Descriptions.json
 │
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
-
----
+```
 
 ## 📁 Folder Purpose
 
@@ -237,14 +243,15 @@ RAG Accuracy evaluated on ~1,700 signs:
 
 ## 🛠️ Tech Stack
 
-Python 3.10+
-PyTorch
-Transformers (HuggingFace)
-Sentence Transformers
-Ollama
-ChromaDB
-Qwen2-7B-Instruct (HF + GGUF)
-Gradio
+- **Python 3.10+**
+- **PyTorch**
+- **Transformers (HuggingFace)**
+- **Sentence Transformers**
+- **Ollama**
+- **ChromaDB**
+- **Qwen2-7B-Instruct (HF + GGUF)**
+- **Gradio**
+
 
 ---
 
