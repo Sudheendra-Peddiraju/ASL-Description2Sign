@@ -1,0 +1,8 @@
+torch
+transformers
+sentence-transformers
+chromadb
+accelerate
+huggingface-hub
+gradio
+python-dotenv

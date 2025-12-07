@@ -1,0 +1,5 @@
+gradio
+chromadb
+sentence-transformers
+huggingface-hub
+pysqlite3-binary

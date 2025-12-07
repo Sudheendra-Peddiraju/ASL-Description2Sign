@@ -1,0 +1,41 @@
+# Python cache / build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pt
+*.bin
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Logs / temp / system files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# ChromaDB databases
+asl_chroma_db/
+Local_Pipeline/asl_chroma_db/
+HF_Spaces_Deployment/asl_chroma_db/
+
+# Model files (large)
+*.gguf
+*.pth
+*.safetensors
+HF_Spaces_Deployment/models/*
+
+# Allow README inside models folder
+!HF_Spaces_Deployment/models/README.md
+
+# HuggingFace cache
+huggingface/
+tokenizers_cache/
