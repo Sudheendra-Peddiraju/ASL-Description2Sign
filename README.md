@@ -1,4 +1,4 @@
-# 🤟 ASL Description → Sign Gloss Translator  
+# 🤟 ASL Description2Sign Gloss Translator
 ### Retrieval-Augmented Generation (RAG) for Linguistic Sign Search
 
 > Translate natural-language descriptions of ASL signs into accurate glosses using vector search + large language models.
