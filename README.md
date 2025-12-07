@@ -145,12 +145,6 @@ flowchart LR
 
 ## 📂 Repository Structure
 
-This project contains **two separate implementations**, each serving a different purpose:  
-- **Local development + evaluation**  
-- **HuggingFace Spaces deployment**
-
-## 📂 Repository Structure
-
 This project contains **two separate implementations**, each serving a different purpose:
 
 - **Local development + evaluation**
@@ -158,27 +152,23 @@ This project contains **two separate implementations**, each serving a different
 
 ```text
 ASL-Description2Sign/
-├── Local_Pipeline/                # Local RAG system
-│   ├── rag_core_2.py
-│   ├── build_database.py
+├── HF_Spaces_Deployment/
+│   └── ASL-Description2Sign/
+│       ├── .gitattributes
+│       ├── ASL_Descriptions.json
+│       ├── Dockerfile
+│       ├── README.md
+│       ├── app.py
+│       ├── packages.txt
+│       ├── requirements.txt
+│
+├── Local_Pipeline/
+│   ├── ASL_Descriptions.json
+│   ├── Build_Database.py
+│   ├── RAG_Core_2.py
 │   ├── main.py
 │   ├── test_runs.py
-│   ├── test_runs_top3.py
-│   └── (utilities)
-│
-├── HF_Spaces_Deployment/          # HuggingFace CPU-only deployment
-│   ├── app.py
-│   ├── build_database.py
-│   ├── requirements.txt
-│   └── models/
-│       └── README.md
-│
-├── data/
-│   └── ASL_Descriptions.json
-│
-├── .gitignore
-├── requirements.txt
-└── README.md
+│   └── test_runs_top3.py
 ```
 
 ## 📁 Folder Purpose
@@ -210,9 +200,9 @@ Key characteristics:
 - Lightweight  
 - Uses GGUF quantized Qwen2-7B with `llama.cpp` backend  
 - Designed for CPU-only execution  
-- Includes a Gradio/Streamlit app for interactive use  
+- Includes a Gradio app for interactive use  
 
-This is the exact version powering your public live demo.
+This is the exact version powering the public live demo.
 
 ---
 
